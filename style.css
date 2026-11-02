@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #3bbae2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 320px;
+    background-color: #2b333f;
+    border-radius: 35px;
+    padding: 30px 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.display {
+    text-align: right;
+    margin-bottom: 30px;
+    padding: 20px;
+    min-height: 90px;
+    word-break: break-all;
+}
+
+.previous-operand {
+    font-size: 18px;
+    color: #58b6f7;
+    margin-bottom: 5px;
+    min-height: 24px;
+}
+
+.current-operand {
+    font-size: 48px;
+    font-weight: 500;
+    color: #58b6f7;
+    min-height: 58px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: rgba(187, 134, 134, 0.13);
+}
+
+.btn.action,
+.btn.operator {
+    background-color: #3ba3ff;
+    color: #f6f9fc;
+    font-weight: 600;
+}
+
+.btn.equals {
+    background-color: #3ba3ff;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.btn.equals:hover {
+    background-color: #2b8ee0;
+}
+
+.Night {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background-color: #3bbae2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .calculator {
+        width: 320px;
+        background-color: #2b333f;
+        border-radius: 35px;
+        padding: 30px 20px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        color: #fff;
+    }
+
+    .display {
+        text-align: right;
+        margin-bottom: 30px;
+        padding: 20px;
+        min-height: 90px;
+        word-break: break-all;
+    }
+
+    .previous-operand {
+        font-size: 18px;
+        color: #58b6f7;
+        margin-bottom: 5px;
+        min-height: 24px;
+    }
+
+    .current-operand {
+        font-size: 48px;
+        font-weight: 500;
+        color: #58b6f7;
+        min-height: 58px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .btn {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        color: #ffffff;
+        padding: 15px 0;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: background-color 0.2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn:hover {
+        background-color: rgba(240, 232, 232, 0.952);
+        color: #070101;
+    }
+
+    .btn.action,
+    .btn.operator {
+        background-color: #3ba3ff;
+        color: #f6f9fc;
+        font-weight: 600;
+    }
+
+    .btn.equals {
+        background-color: #3ba3ff;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    .btn.equals:hover {
+        background-color: #2b8ee0;
+    }
+}
+
+.Light {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background-color: #3bbae2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .calculator {
+        width: 320px;
+        background-color: #fcfcfce8;
+        border-radius: 35px;
+        padding: 30px 20px;
+        box-shadow: 0 15px 35px rgba(25, 61, 40, 0.911);
+        color: #070101;
+    }
+
+    .display {
+        text-align: right;
+        margin-bottom: 30px;
+        padding: 20px;
+        min-height: 90px;
+        word-break: break-all;
+    }
+
+    .previous-operand {
+        font-size: 18px;
+        color: #14b3db;
+        margin-bottom: 5px;
+        min-height: 24px;
+    }
+
+    .current-operand {
+        font-size: 48px;
+        font-weight: 500;
+        color: #14b3db;
+        min-height: 58px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .btn {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        color: #241919;
+        padding: 15px 0;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: background-color 0.2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn:hover {
+        background-color: #000000d5;
+
+        color: #f0e7e7;
+
+    }
+
+    .btn.action,
+    .btn.operator {
+        color: #14b3db;
+        font-weight: 600;
+    }
+
+    .btn.equals {
+        color: #14b3db;
+        border-radius: 50%;
+    }
+
+    .btn.equals:hover {
+        background-color: #000000d5;
+    }
+}
+
+
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 28px;
+}
+
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1e252b;
+    border: 2px solid #58b6f7;
+    transition: 0.4s ease;
+    border-radius: 34px;
+}
+
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #58b6f7;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;
+}
+
+
+input:checked+.slider {
+    background-color: #58b6f7;
+}
+
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+    background-color: #2b333f;
+}
