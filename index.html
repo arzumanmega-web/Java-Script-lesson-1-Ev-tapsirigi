@@ -26,29 +26,31 @@
 
         <div class="buttons">
 
-            <button onclick="b1()" class="btn">1</button>
-            <button onclick="b2()" class="btn">2</button>
-            <button onclick="b3()" class="btn">3</button>
-            <button onclick="b4()" class="btn">4</button>
-            <button onclick="b5()" class="btn">5</button>
-            <button onclick="b6()" class="btn">6</button>
-            <button onclick="b7()" class="btn">7</button>
-            <button onclick="b8()" class="btn">8</button>
-            <button onclick="b9()" class="btn">9</button>
-            <button onclick="b0()" class="btn">0</button>
-            <button onclick="b00()" class="btn">00</button>
-
-            <button onclick="bTam()" class="btn" title="Tam onda">.</button>
-
-            <button onclick="bTop()" class="btn operator" title="Toplama">+</button>
-            <button onclick="bCix()" class="btn operator" title="Cixma">-</button>
-            <button onclick="bVur()" class="btn operator" title="Vurma">*</button>
-            <button onclick="bBol()" class="btn operator" title="Bolme">/</button>
-
             <button onclick="bSifirla()" class="btn action" title="Sifirla">C</button>
-            <button onclick="bFaiz()" class="btn action" title="Faizini tap">%</button>
+            <button onclick="operator('%')" class="btn action" title="Faizini tap">%</button>
             <button onclick="bSil()" class="btn action" title="Sil">⌫</button>
+            <button onclick="operator('/')" class="btn operator" title="Bolme">/</button>
+
+            <button onclick="number('7')" class="btn">7</button>
+            <button onclick="number('8')" class="btn">8</button>
+            <button onclick="number('9')" class="btn">9</button>
+            <button onclick="operator('*')" class="btn operator" title="Vurma">*</button>
+
+            <button onclick="number('4')" class="btn">4</button>
+            <button onclick="number('5')" class="btn">5</button>
+            <button onclick="number('6')" class="btn">6</button>
+            <button onclick="operator('-')" class="btn operator" title="Cixma">-</button>
+
+            <button onclick="number('1')" class="btn">1</button>
+            <button onclick="number('2')" class="btn">2</button>
+            <button onclick="number('3')" class="btn">3</button>
+            <button onclick="operator('+')" class="btn operator" title="Toplama">+</button>
+            
+            <button onclick="number('00')" class="btn">00</button>
+            <button onclick="number('0')" class="btn">0</button>
+            <button onclick="bTam()" class="btn" title="Tam onda">.</button>
             <button onclick="bHesabla()" class="btn equals" title="Hesabla">=</button>
+
         </div>
     </div>
 

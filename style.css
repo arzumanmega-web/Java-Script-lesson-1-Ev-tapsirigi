@@ -71,8 +71,7 @@ body {
 
 .btn.action,
 .btn.operator {
-    background-color: #3ba3ff;
-    color: #f6f9fc;
+    color: #3ba3ff;
     font-weight: 600;
 }
 
@@ -161,10 +160,9 @@ body {
 
     .btn.action,
     .btn.operator {
-        background-color: #3ba3ff;
-        color: #f6f9fc;
-        font-weight: 600;
-    }
+    color: #3ba3ff;
+    font-weight: 600;
+}
 
     .btn.equals {
         background-color: #3ba3ff;

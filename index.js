@@ -23,62 +23,13 @@ const current = document.getElementById("current-operand");
 const previous = document.getElementById("previous-operand");
 
 var TockaTrue = false;
-var ToplaTrue = false;
-var CixTrue = false;
-var VurTrue = false;
-var BolTrue = false;
-var FaizTrue = false;
 
-function operatorIsTrue(isTrue) {
-    ToplaTrue = isTrue;
-    CixTrue = isTrue;
-    VurTrue = isTrue;
-    BolTrue = isTrue;
-    FaizTrue = isTrue;
-}
-function b1() {
-    current.innerText += "1";
-    operatorIsTrue(false);
-}
-function b2() {
-    current.innerText += "2";
-    operatorIsTrue(false);
-}
-function b3() {
-    current.innerText += "3";
-    operatorIsTrue(false);
-}
-function b4() {
-    current.innerText += "4";
-    operatorIsTrue(false);
-}
-function b5() {
-    current.innerText += "5";
-    operatorIsTrue(false);
-}
-function b6() {
-    current.innerText += "6";
-    operatorIsTrue(false);
-}
-function b7() {
-    current.innerText += "7";
-    operatorIsTrue(false);
-}
-function b8() {
-    current.innerText += "8";
-    operatorIsTrue(false);
-}
-function b9() {
-    current.innerText += "9";
-    operatorIsTrue(false);
-}
-function b0() {
-    current.innerText += "0";
-    operatorIsTrue(false);
-}
-function b00() {
-    current.innerText += "00";
-    operatorIsTrue(false);
+var operatorIsTrue = false;
+
+
+function number(number){
+    current.innerText += number;
+    operatorIsTrue=false;
 }
 
 function bTam() {
@@ -93,95 +44,31 @@ function bTam() {
     }
 }
 
-function bTop() {
+
+
+function operator(operator) {
     let sonSimvol = current.innerText.slice(-1);
 
-    if (sonSimvol == "*" || sonSimvol == "-" || sonSimvol == "%" || sonSimvol == "/") {
+    if (sonSimvol == "-" || sonSimvol == "+" || sonSimvol == "*" || sonSimvol == "%" || sonSimvol == "/") {
         current.innerText = current.innerText.substring(0, current.innerText.length - 1);
-        current.innerText += "+";
-        operatorIsTrue(true);
+        current.innerText += operator;
+        operatorIsTrue=true;
         TockaTrue = false;
     }
 
-    if (!ToplaTrue && current.innerText !== "") {
-        current.innerText += "+";
-        operatorIsTrue(true);
+    if (!operatorIsTrue) {
+        current.innerText += operator;
+        operatorIsTruetrue=true;
         TockaTrue = false;
     }
 }
 
-function bCix() {
-    let sonSimvol = current.innerText.slice(-1);
 
-    if (sonSimvol == "+" || sonSimvol == "*" || sonSimvol == "%" || sonSimvol == "/") {
-        current.innerText = current.innerText.substring(0, current.innerText.length - 1);
-        current.innerText += "-";
-        operatorIsTrue(true);
-        TockaTrue = false;
-    }
-
-    if (!CixTrue) {
-        current.innerText += "-";
-        operatorIsTrue(true);
-        TockaTrue = false;
-    }
-}
-
-function bVur() {
-    let sonSimvol = current.innerText.slice(-1);
-
-    if (sonSimvol == "+" || sonSimvol == "-" || sonSimvol == "%" || sonSimvol == "/") {
-        current.innerText = current.innerText.substring(0, current.innerText.length - 1);
-        current.innerText += "*";
-        operatorIsTrue(true);
-        TockaTrue = false;
-    }
-
-    if (!VurTrue && current.innerText !== "") {
-        current.innerText += "*";
-        operatorIsTrue(true);
-        TockaTrue = false;
-    }
-}
-
-function bBol() {
-    let sonSimvol = current.innerText.slice(-1);
-
-    if (sonSimvol == "+" || sonSimvol == "-" || sonSimvol == "%" || sonSimvol == "*") {
-        current.innerText = current.innerText.substring(0, current.innerText.length - 1);
-        current.innerText += "/";
-        operatorIsTrue(true);
-        TockaTrue = false;
-    }
-
-    if (!BolTrue && current.innerText !== "") {
-        current.innerText += "/";
-        operatorIsTrue(true);
-        TockaTrue = false;
-    }
-}
-
-function bFaiz() {
-    let sonSimvol = current.innerText.slice(-1);
-
-    if (sonSimvol == "+" || sonSimvol == "-" || sonSimvol == "*" || sonSimvol == "/") {
-        current.innerText = current.innerText.substring(0, current.innerText.length - 1);
-        current.innerText += "%";
-        operatorIsTrue(true);
-        TockaTrue = false;
-    }
-
-    if (!FaizTrue && current.innerText !== "") {
-        current.innerText += "%";
-        operatorIsTrue(true);
-        TockaTrue = false;
-    }
-}
 
 function bSifirla() {
     current.innerText = "";
     previous.innerText = "";
-    operatorIsTrue(false);
+    operatorIsTrue=false;
     TockaTrue = false;
 }
 
@@ -200,7 +87,7 @@ function bSil() {
         let sonSimvol2 = current.innerText.slice(-1);
 
         if (sonSimvol2 !== "+" && sonSimvol2 !== "-" && sonSimvol2 !== "*" && sonSimvol2 !== "/" && sonSimvol2 !== "%") {
-            operatorIsTrue(false);
+            operatorIsTrue=false;
         }
 
         let ededTockaVar = false;
@@ -222,7 +109,7 @@ function bSil() {
         }
         let sonSimvol3 = current.innerText.slice(-1);
         if (sonSimvol3 == "+" || sonSimvol3 == "-" || sonSimvol3 == "*" || sonSimvol3 == "/" || sonSimvol3 == "%") {
-            operatorIsTrue(true);
+            operatorIsTrue=true;
         }
     }
 
